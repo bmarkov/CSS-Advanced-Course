@@ -1,0 +1,30 @@
+@media screen and (min-width: 500px) {
+	html { font-size: var(--font-size-lv2, 14px); }
+}
+
+@media screen and (min-width: 700px) {
+	html { font-size: var(--font-size-lv3, 16px); }
+}
+
+@media screen and (min-width: 1600px) {
+	html { font-size: var(--font-size-lv4, 18px); }
+}
+/* 
+ * Whitespace Reset */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* 
+ * Box-sizing fix */
+html, body {
+	box-sizing: border-box;
+	background:#FAFAFA;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
