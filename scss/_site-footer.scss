@@ -1,0 +1,26 @@
+.site-footer {
+   background: $footer-background-color;
+}
+
+.site-footer ul {
+	list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10%;
+}
+
+.site-footer li {
+	list-style: none;
+	color: $footer-color; 
+	padding: 10px;
+}
+.site-footer li a {
+	color: inherit;
+	text-decoration: none;
+}
+.site-footer li a:hover {
+	color: red;
+}
+

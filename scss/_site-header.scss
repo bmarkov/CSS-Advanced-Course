@@ -1,16 +1,21 @@
 .site-header {
-	background: #FAFAFA;
-	border-bottom: 1px solid #ddd;
+    border-bottom-color: $header-border-color;
+	border-bottom-width: 1px;
+	border-bottom-style:solid;
+	background: $header-background-color;
+	color: $header-color;
     height: 64px;
     letter-spacing: .2px;
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     max-width: 100%;
-    padding: 0 4px 0 8px;
+    padding: 10px 20px;
     text-align: left;
+    display: flex;
     text-transform: none;
+    align-items: center;
 }
 .site-title, .site-title h2 {
-	font-size:24px;
+	font-size:20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -19,6 +24,7 @@
 	margin-right: 5px;
 }
 .site-description {
-	font-size: 16px;
-	opacity: 0.9;
+	font-size: 13px;
+	opacity: 0.8;
+	margin-left: 30px;
 }
