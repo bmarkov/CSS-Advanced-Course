@@ -1,13 +1,13 @@
 @media screen and (min-width: 500px) {
-	html { font-size: var(--font-size-lv2, 14px); }
+	html { font-size: var(--font-size-small, 14px); }
 }
 
 @media screen and (min-width: 700px) {
-	html { font-size: var(--font-size-lv3, 16px); }
+	html { font-size: var(--font-size-medium, 16px); }
 }
 
 @media screen and (min-width: 1600px) {
-	html { font-size: var(--font-size-lv4, 18px); }
+	html { font-size: var(--font-size-large, 18px); }
 }
 /* 
  * Whitespace Reset */
@@ -30,10 +30,6 @@ html, body {
 	box-sizing: inherit;
 }
 
-.site .site-header { grid-area: header; }
-.site .site-navigation { grid-area: menu; }
-.site .site-content { grid-area: main; }
-.site .site-footer { grid-area: footer; }
 
 .site {
   height: 100%;
@@ -44,8 +40,28 @@ html, body {
     'menu footer footer footer footer footer';
   grid-template-rows: 64px calc(100% - 128px) 64px; 
   padding: 0px;
-}
 
-.site-content {
-	background: $main-background-color;
+  &-header {
+	grid-area: header; 
+  }
+  
+  &-navigation {
+	 grid-area: menu; 
+  }
+  
+  &-content {
+	 grid-area: main;
+	 background: $main-background-color;	
+	 padding: 5%;	 	 
+	 table th, td {
+		border-bottom: 1px solid #ddd;
+		padding: 10px;
+	 }
+	 table tr:hover {background-color: #f5f5f5;}
+  }
+  
+  &-footer {
+	 grid-area: footer; 
+  }
+  
 }
