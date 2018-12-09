@@ -1,3 +1,4 @@
+.site-mobile-header,
 .site-header {
     border-bottom-color: $header-border-color;
 	border-bottom-width: 1px;
@@ -14,16 +15,21 @@
     text-transform: none;
     align-items: center;
 }
-.site-title, .site-title h2 {
+.site-mobile-title,
+.site-title,
+.site-mobile-title h2,
+.site-title h2 {
 	font-size:20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+.site-mobile-title i,
 .site-title i {
 	margin-right: 5px;
 }
-.site-description {
+.site-description,
+.site-mobile-description {
 	font-size: 13px;
 	opacity: 0.8;
 	margin-left: 30px;

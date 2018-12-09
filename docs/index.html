@@ -11,7 +11,14 @@
 				if (this.readyState == 4 && this.status == 200) {
 					var content = document.querySelector('.site-content');
 					
-					content.innerHTML = this.responseText;
+					content.style.opacity = 0;
+					
+					const html = this.responseText;
+					
+					setTimeout(function() {
+						content.innerHTML = html;
+						content.style.opacity = 1;
+					}, 300);
 				}
 			  };
 			  xhttp.open("GET", url, true);
@@ -27,6 +34,10 @@
 						event.preventDefault();
 					}
 				}
+				
+				document.getElementById('mobile').onclick = function() {
+					window.open("mobile.html", "_self");
+				};
 			}
 		</script>
 	</head>
@@ -52,6 +63,7 @@
 					<li><a href="/browsersusage/2011/"><i class="far fa-clock"></i>2011</a></li>
 					<li><a href="/browsersusage/2010/"><i class="far fa-clock"></i>2010</a></li>
 				</ul>
+				<span id="mobile">Mobile Device Statistics</span>
 			</nav>				
 			<main class="site-content">
 				<h1>The Most Popular Browsers</h1>

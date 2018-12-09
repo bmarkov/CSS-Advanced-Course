@@ -1,6 +1,17 @@
 
 @import '../fontawesome/css/all.css';
 
+
+@mixin linx ($link, $hover) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;   
+    }
+  }
+}
+
+
 @import 'variables';
 
 @import 'layout';
